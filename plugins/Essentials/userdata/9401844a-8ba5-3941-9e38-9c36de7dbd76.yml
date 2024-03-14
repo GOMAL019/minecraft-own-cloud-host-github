@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 160.177.10.12
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709668445004
+  login: 1709667041680
+money: '0'
+last-account-name: sukuna_the_curse
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: 852.6999999880791
+  y: 50.0
+  z: 1680.2090331644747
+  yaw: 118.07177734375
+  pitch: 62.04182434082031
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: 836.5734779102916
+  y: 27.176759275064235
+  z: 1679.9770591967613
+  yaw: -97.56338500976562
+  pitch: 1.955611228942871

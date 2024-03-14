@@ -1,0 +1,313 @@
+FlagGroups:
+  examplegroup:
+    priority: 20
+    overwriteParent: true
+    available:
+      0:
+        setting: 'allow g:members'
+        editable: false
+        flag: ride
+        editPermission: ""
+        applyto: []
+      1:
+        setting: 'allow g:all'
+        editable: false
+        flag: use
+        editPermission: ""
+        applyto: []
+      2:
+        setting: 'allow g:members'
+        editable: false
+        flag: build
+        editPermission: ""
+        applyto: []
+      3:
+        setting: 'allow g:members'
+        editable: false
+        flag: block-break
+        editPermission: ""
+        applyto: []
+      4:
+        setting: 'allow g:members'
+        editable: false
+        flag: block-place
+        editPermission: ""
+        applyto: []
+      5:
+        setting: 'allow g:members'
+        editable: false
+        flag: chest-access
+        editPermission: ""
+        applyto: []
+    sold:
+      0:
+        setting: 'allow g:members'
+        editable: true
+        flag: ride
+        editPermission: ""
+        guidescription:
+          - '&2Decides if players can use vehicles'
+        applyto: []
+      1:
+        setting: 'allow g:members'
+        editable: true
+        flag: use
+        editPermission: ""
+        guidescription:
+          - '&2Decides if players can use things'
+          - '&2like doors, levers, etc.'
+        applyto: []
+      2:
+        setting: 'allow g:members'
+        editable: false
+        flag: build
+        editPermission: ""
+        applyto: []
+      3:
+        setting: 'allow g:members'
+        editable: false
+        flag: block-break
+        editPermission: ""
+        applyto: []
+      4:
+        setting: 'allow g:members'
+        editable: false
+        flag: block-place
+        editPermission: ""
+        applyto: []
+      5:
+        setting: 'allow g:members'
+        editable: false
+        flag: chest-access
+        editPermission: ""
+        applyto: []
+
+DefaultFlagGroup:
+  priority: 20
+  overwriteParent: true
+  available:
+    0:
+      setting: 'allow g:members'
+      editable: false
+      flag: ride
+      editPermission: ""
+      applyto: []
+    1:
+      setting: '%prefix%&6This region can be bought for &2%price%%currency%'
+      editable: false
+      flag: greeting
+      editPermission: ""
+      applyto:
+        - SellRegion
+    2:
+      setting: '%prefix%&6This region can be rented for &2%price%%currency% &6per &2%extendtime-writtenout% &6and extended to &2%maxextendtime-writtenout%'
+      editable: false
+      flag: greeting
+      editPermission: ""
+      applyto:
+        - RentRegion
+    3:
+      setting: '%prefix%&6Contract available for &2%price%%currency% &6per &2%extendtime-writtenout%'
+      editable: false
+      flag: greeting
+      editPermission: ""
+      applyto:
+        - ContractRegion
+    4:
+      setting: 'allow g:all'
+      editable: false
+      flag: use
+      editPermission: ""
+      applyto: []
+    5:
+      setting: 'allow g:members'
+      editable: false
+      flag: build
+      editPermission: ""
+      applyto: []
+    6:
+      setting: 'allow g:members'
+      editable: false
+      flag: block-break
+      editPermission: ""
+      applyto: []
+    7:
+      setting: 'allow g:members'
+      editable: false
+      flag: block-place
+      editPermission: ""
+      applyto: []
+    8:
+      setting: 'allow g:members'
+      editable: false
+      flag: chest-access
+      editPermission: ""
+      applyto: []
+  sold:
+    0:
+      setting: 'allow g:members'
+      editable: true
+      flag: ride
+      editPermission: ""
+      guidescription:
+        - '&2Decides if players can use vehicles'
+      applyto: []
+    1:
+      setting: 'remove'
+      editable: true
+      flag: greeting
+      editPermission: ""
+      guidescription:
+        - '&2Sets a message that will be'
+        - '&2shown to players that enter'
+        - '&2the region'
+      applyto: []
+    2:
+      setting: 'allow g:members'
+      editable: true
+      flag: use
+      editPermission: ""
+      guidescription:
+        - '&2Decides if players can use things'
+        - '&2like doors, levers, etc.'
+      applyto: []
+    3:
+      setting: 'allow g:members'
+      editable: false
+      flag: build
+      editPermission: ""
+      applyto: []
+    4:
+      setting: 'allow g:members'
+      editable: false
+      flag: block-break
+      editPermission: ""
+      applyto: []
+    5:
+      setting: 'allow g:members'
+      editable: false
+      flag: block-place
+      editPermission: ""
+      applyto: []
+    6:
+      setting: 'allow g:members'
+      editable: false
+      flag: chest-access
+      editPermission: ""
+      applyto: []
+
+SubregionFlagGroup:
+  # Pritority will be ignored for Subregions.
+  # ARM will automatically select the priority based on your settings for subregions!
+  priority: 0
+  overwriteParent: false
+  available:
+    0:
+      setting: 'allow g:members'
+      editable: false
+      flag: ride
+      editPermission: ""
+      applyto: []
+    1:
+      setting: '%prefix%&6This region can be bought for &2%price%%currency%'
+      editable: false
+      flag: greeting
+      editPermission: ""
+      applyto:
+        - SellRegion
+    2:
+      setting: '%prefix%&6This region can be rented for &2%price%%currency% &6per &2%extendtime-writtenout% &6and extended to &2%maxextendtime-writtenout%'
+      editable: false
+      flag: greeting
+      editPermission: ""
+      applyto:
+        - RentRegion
+    3:
+      setting: '%prefix%&6Contract available for &2%price%%currency% &6per &2%extendtime-writtenout%'
+      editable: false
+      flag: greeting
+      editPermission: ""
+      applyto:
+        - ContractRegion
+    4:
+      setting: 'allow g:all'
+      editable: false
+      flag: use
+      editPermission: ""
+      applyto: []
+    5:
+      setting: 'allow g:members'
+      editable: false
+      flag: build
+      editPermission: ""
+      applyto: []
+    6:
+      setting: 'allow g:members'
+      editable: false
+      flag: block-break
+      editPermission: ""
+      applyto: []
+    7:
+      setting: 'allow g:members'
+      editable: false
+      flag: block-place
+      editPermission: ""
+      applyto: []
+    8:
+      setting: 'allow g:members'
+      editable: false
+      flag: chest-access
+      editPermission: ""
+      applyto: []
+  sold:
+    0:
+      setting: 'allow g:members'
+      editable: true
+      flag: ride
+      editPermission: ""
+      guidescription:
+        - '&2Decides if players can use vehicles'
+      applyto: []
+    1:
+      setting: 'remove'
+      editable: true
+      flag: greeting
+      editPermission: ""
+      guidescription:
+        - '&2Sets a message that will be'
+        - '&2shown to players that enter'
+        - '&2the region'
+      applyto: []
+    2:
+      setting: 'allow g:members'
+      editable: true
+      flag: use
+      editPermission: ""
+      guidescription:
+        - '&2Decides if players can use things'
+        - '&2like doors, levers, etc.'
+      applyto: []
+    3:
+      setting: 'allow g:members'
+      editable: false
+      flag: build
+      editPermission: ""
+      applyto: []
+    4:
+      setting: 'allow g:members'
+      editable: false
+      flag: block-break
+      editPermission: ""
+      applyto: []
+    5:
+      setting: 'allow g:members'
+      editable: false
+      flag: block-place
+      editPermission: ""
+      applyto: []
+    6:
+      setting: 'allow g:members'
+      editable: false
+      flag: chest-access
+      editPermission: ""
+      applyto: []

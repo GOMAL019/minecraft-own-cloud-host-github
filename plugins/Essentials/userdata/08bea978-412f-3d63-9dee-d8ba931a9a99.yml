@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 105.71.5.146
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1709149136417
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709592802991
+  login: 1709592585915
+money: '17445.0'
+last-account-name: simox
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -101.09841248024738
+  y: 74.0
+  z: 274.2970469009999
+  yaw: 173.73446655273438
+  pitch: 29.187164306640625
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -105.3732805135707
+  y: 58.0
+  z: 296.02948952341126
+  yaw: 92.4072265625
+  pitch: -75.24395751953125

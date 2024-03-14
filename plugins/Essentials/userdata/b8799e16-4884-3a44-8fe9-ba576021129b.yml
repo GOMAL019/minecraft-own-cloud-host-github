@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 105.66.131.85
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1706110123632
+  login: 1706110223749
+money: '31170.0'
+last-account-name: hamzaofficiel
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: 45.586052205496344
+  y: 64.0
+  z: 37.44011739115738
+  yaw: 164.3970489501953
+  pitch: 11.099906921386719

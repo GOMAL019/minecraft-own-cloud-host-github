@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 105.69.96.11
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1706205885036
+  login: 1706205055772
+money: '31000'
+last-account-name: lzwa
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: 2.640916391783181
+  y: 77.0
+  z: -113.83436755358726
+  yaw: 129.5992889404297
+  pitch: -4.950047016143799

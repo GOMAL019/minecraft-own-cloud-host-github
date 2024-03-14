@@ -1,0 +1,339 @@
+# plugin uses this file in order to display messages in plugin
+# For hologram messages, you have to check config.yml
+# NOTE: DO NOT USE TAB in yml file as it can cause serious performance problems and it sometimes can break the plugin
+# Don't forget to rate if you liked EzChestShop
+shop-gui:
+  initialbuyprice: "&a初始購買價格: &e%buyprice% %currency%"
+  initialsellprice: "&c初始販售價格: &e%sellprice% %currency%"
+  admin-title: "&c%shopowner%的箱子商店 &4(管理)"
+  nonowner-title: "&c%shopowner%的箱子商店"
+  owner-title: "&c%shopowner%的箱子商店"
+  adminshop-title: "&c管理員商店"
+  buttons:
+    sellX-title: "&c賣出%amount%個"
+    sellX-lore:
+      - "&7以 &e%price% %currency% 販售"
+    buyX-title: "&a購買%amount%個"
+    buyX-lore:
+      - "&7以 &e%price% %currency% 購買"
+    adminview: "&c&l管理庫存"
+    storage: "&e&l庫存"
+    settings: "&b&l設定"
+    disabled-title: "&c關閉"
+    disabled-lore: 
+      - "&7此選項已被商店主人關閉."
+transactions:
+  transactionButtonTitle: "&a交易紀錄"
+  backToSettingsButton: "&e回到設定"
+  PaperTitleBuy: "&a買 | %player%"
+  PaperTitleSell: "&c賣 | %player%"
+  PaperLoreBuy: 
+    - "&7總共: %price% "
+    - " &7數量: %count% "
+    - " &7交易類型: &a由您購買 "
+    - " &e%time%"
+  PaperLoreSell:
+    - "&7總共: %price% "
+    - " &7數量: %count% "
+    - " &7交易類型: &c由您販售 "
+    - " &e%time%"
+  lessthanminute: "&e一分鐘內"
+  minutesago: "&e%minutes% 分鐘前"
+  hoursago: "&e%hours% 小時前"
+  daysago: "&e%days% 天前"
+  player-inform-buy: "&7[&aECS&7] &b%player% &7has bought &e%amount%x &7of &d%item%&7 with the worth of &a%price%%currency%"
+  player-inform-sell: "&7[&aECS&7] &b%player% &7has sold &e%amount%x &7of &d%item%&7 with the worth of &a%price%%currency%"
+#settings section
+settings:
+  GuiTitle: "&b&l設定"
+  statusOn: "&a開啟"
+  statusOff: "&c關閉"
+  buttons:
+    toggleTransactions:
+      Title: "&e交易訊息開關"
+      Lore:
+        - "&7目前狀態: %status% "
+        - " &7若開啟此選項, "
+        - " &7當有人在此商店與您交易 "
+        - " &7您將會收到訊息."
+    disableBuying:
+      Title: "&e禁止購買"
+      Lore:
+        - "&7目前狀態: %status% "
+        - " &7若您開啟此選項， "
+        - " &7此商店將會禁止任何人購買."
+    disableSelling:
+      Title: "&e禁止販售"
+      Lore:
+        - "&7目前狀態: %status% "
+        - " &7若您開啟此選項， "
+        - " &7此商店將會禁止任何人販售."
+    shopAdmins:
+      Title: "&e商店主人"
+      nobodyStatusAdmins: "&a沒有人"
+      Lore:
+        - "&7您可以新增/移除商店主人 "
+        - " &7主人們可以管理商品庫存 "
+        - " &7及商店設定(除了分享收益及新增/刪除主人) "
+        - " &a左鍵 &7來增加主人 "
+        - " &c右鍵 &7來移除主人 "
+        - " &7目前主人: %admins%"
+    sharedIncome:
+      Title: "&分享收益"
+      Lore:
+      - "&7目前狀態: %status% "
+      - " &7若您開啟此選項， "
+      - " &7收益將會分享給所有主人."
+    hologramRotation:
+      Title: "&eHologram Rotation"
+      Lore:
+        - "&7Rotation: "
+        - "%rotations%"
+        - " &aLeft&7/&cRight&7-click to cycle"
+        - " &7through all rotations!"
+    changePrices:
+      Title: "&eShop buy/sell price"
+      Lore:
+        - "&7Edit the Buy or Sell price "
+        - " &d "
+        - " &cLeft click to   &aRight click to  "
+        - ' &l  &r&cedit Sell    &l   &r &aedit Buy'
+      SignPlaceholderBuy:
+        - ""
+        - "&a^^ &7Enter &a^^ "
+        - " &7your new "
+        - " &abuy &7price!"
+      SignPlaceholderSell:
+        - ""
+        - "&c^^ &7Enter &c^^ "
+        - " &7your new "
+        - " &csell &7price!"
+    hologramMessage:
+      Title: "&eCustomize your Hologram"
+      Lore:
+        - "&cLeft Click to add a custom"
+        - "&cHologram message!"
+        - "&aRight Click to manage your"
+        - "&acurrent Hologram messages!"
+        - " &d "
+        - "&8You can use line %lineNumbers%!"
+        - "<ifhasmax>&8You can have %messagesleft% more messages!</ifhasmax>"
+      LoreMaxReached:
+        - "&cYou can only have"
+        - "&c%maxLines% lines!"
+        - "&7Click here to manage"
+        - "&7your hologram messages!"
+      LoreEdit:
+        - "&cLeft Click to edit your custom"
+        - "&cHologram message!"
+        - "&aRight Click to manage your"
+        - "&acurrent Hologram messages!"
+        - " &d "
+        - "&8You can use line %lineNumbers%!"
+        - "<ifhasmax>&8You can have %messagesleft% more messages!</ifhasmax>"
+      SignPlaceholderTexts: "###############"
+    other:
+      backToShopGuiButton: "&e回到商店"
+      latestTransactionsButton: "&a最後一筆交易" 
+  chat:
+    toggleTransactions:
+      MessageOn: "&7交易訊息: &a開啟"
+      MessageOff: "&7交易訊息: &c關閉"
+    disableBuying:
+      MessageOn: "&禁止購買: &a開啟"
+      MessageOff: "&7禁止購買: &c關閉"
+    disableSelling:
+      MessageOn: "&7禁止販售: &a開啟"
+      MessageOff: "&7禁止販售: &c關閉"
+    shopAdmins:
+      addingAdminWaiting: "&e請輸入您想新增的主人名字."
+      removingAdminWaiting: "&e請輸入您想移除的主人名字."
+      selfAdmin: "&c您無法將自己加入/移除主人名單!"
+      noPlayer: "&c此玩家不存在."
+      sucAdminAdded: "&e%player% &a已成功加入至主人名單."
+      alreadyAdmin: "&c此玩家已經在主人名單裡了!"
+      sucAdminRemoved: "&e%player% &a已成功從主人名單內移除."
+      notInAdminList: "&c此玩家不在主人名單中!"
+      clearedAdmins: "&cRemoved all admins from this shop."
+    sharedIncome:
+      MessageOn: "&7分享收益: &a開啟"
+      MessageOff: "&7分享收益: &c關閉"
+    copy-paste:
+      copiedShopSettings: "[&6Copied &7shop settings!](%settings%)"
+      pastedShopSettings: "&ePasted &7shop settings!"
+    hologramRotation:
+      rotateHologramInChat: "&7Hologram Rotation: %rotation%"
+      rotation:
+        Up: "&aUp"
+        North: "&aNorth"
+        East: "&aEast"
+        South: "&aSouth"
+        West: "&aWest"
+        Down: "&aDown"
+    protection:
+      cannotDestroyShop: "&cYou cannot destroy this shop!"
+# Custom Messages Manager GUI section
+customMessageManager:
+  GuiTitle: "&b&lHologram Messages Manager"
+  ConfirmDeleteGuiTitle: "&c&lConfirm Delete Text"
+  buttons:
+    previousPage:
+      Title: "&ePrevious"
+      Lore:
+    nextPage:
+      Title: "&eNext"
+      Lore:
+    shopEntry:
+      Title: "&7%shopitem% &7shop"
+      UnkownTitle: "&cUnknown shop"
+      Lore:
+        - "&7Located at &eX:%x%, Y:%y%, Z:%z%"
+        - ""
+        - "&eHologram messages:"
+        - "&7%hologram-messages%"
+        - ""
+        - "&cLeft Click to delete this"
+        - "&chologram message!"
+        - "&aRight Click to edit this"
+        - "&ahologram message!"
+    confirmDelete:
+      Title: "&cAre you sure?"
+      Lore:
+        - "&7You are about to delete"
+        - "&7this hologram message!"
+        - "&7This action cannot be undone!"
+        - "&cClick to confirm!"
+    backToCustomMessageManager:
+      Title: "&eBack to Custom Messages Manager"
+      Lore:
+    modifyCurrentHologram:
+      Title: "&eModify current hologram"
+      Lore:
+        - "&cLeft Click to delete the current"
+        - "&chologram message!"
+        - "&aRight Click to edit the current"
+        - "&ahologram message!"
+customBuySell:
+  gui-customAmountSign-title: "&eCustom Sell/Buy"
+  gui-customAmountSign-lore:
+    - "&7Buy or Sell in custom amount "
+    - " &d "
+    - " &cLeft click for   &aRight click for  "
+    - " &l &r&ccustom Sell    &l &r &acustom Buy"
+    - " &d "
+    - "         &7You can totally"
+    - "         &l &r&csell &e%sellcount% &7| &abuy &e%buycount% "
+    - "          &l &r&7of this item."
+  #15 characters per line (without color codes) and "\n" for next line (starting from second line)
+  signEditorGui:
+    buy:
+      - "&a^^ Max: %max% ^^ "
+      - " &bInsert your "
+      - " &bdesired amount"
+    sell:
+      - "&c^^ Max: %max% ^^ "
+      - " &bInsert your "
+      - " &bdesired amount"
+  errors:
+    buyingIsDisabled: "&cBuying is disabled in this shop."
+    sellingIsDisabled: "&cSelling is disabled in this shop."
+    wrongInput: "&cWrong input(Or probably a very large number), please insert a number!"
+    enterTheAmount: "&ePlease write your desired amount in the sign"
+    unsupportedInteger: "&cHey!, the amount cannot be zero or negative obviously."
+shop-messages:
+  successful-buy: "&a您成功以 &e%price% %currency% 購買商品"
+  fullinv: "&c您的背包已滿!"
+  cannotafford: "&c你買不起這個..."
+  outofstock: "&c商店已缺貨!"
+  successful-sell: "&a您成功以 &e%price% %currency% 販售商品"
+  shopcannotafford: "&c店家破產了..."
+  notenoughitemtosell: "&c您沒有足夠的道具來販售!"
+  chestisFull: "箱子已滿."
+  selftransaction: "&c您無法與自己交易!"
+  openingShopProblem: "&cThere is a problem in opening this chest shop, Please contact administrator and check the console."
+  joinEmptyShopActionBar: "&b&l%emptyCount% &c&lempty shops near you!"
+command-messages:
+  negativeprice: "&c負數? 避免你破產最好別那麼做..."
+  notenoughargs: "&c請輸入足夠的參數! \n &c正確用法: /ecs create (購買價格) (販售價格)"
+  consolenotallowed: "&c你沒有權限執行這項命令."
+  help:
+    - "&bEz&cChestShop &7Plugin By Dead_Light & ElitoGame©"
+    - "&7- &c/ecs create (購買價格) (販售價格) &7| 請手持要販售的物品並注視箱子輸入指令來設立商店 "
+    - " &7- &c/ecs remove &7| 關閉你正在注視的商店 "
+    - "&7- &c/ecs settings (setting) &7| Copy/Paste/Toggle settings related to the chest shop "
+    - "&eSettings: &7[copy, paste, admins, toggle-buying, toggle-selling, toggle-message, toggle-shared-income, change-rotation] "
+    - "&7- &c/ecs emptyshops &7| Shows you nearby empty shops that YOU own."
+    - " &7很簡單 對吧? :)"
+  help-admin-view-addition:
+    - "&cAdmin Help: "
+    - "&7- &c/ecsadmin"
+  adminhelp:
+    - "&cAdmin help: "
+    - "&7- &c/&eecsadmin remove &7| removes the shop that you are looking at (although u can remove it by breaking it) "
+    - "&7- &c/&eecsadmin reload &7| reload the plugin configurations"
+    - "&7- &c/&eecsadmin create (buy) (sell) &7| create an admin shop"
+    - "&7- &c/&eecsadmin transfer-ownership (player) &7| transfer the ownership of any shop to another player."
+    - "&7- &c/&eecsadmin uploadlogs &7| upload ECS related infos to ECS's debug website. For faster help, include this in your bug report on ECS's discord!"
+    - "&7 For further help, join our [&bDiscord](%discord_link% Click to join the support Discord!)&7!"
+  alreadyashop: "&c這個箱子已經是商店了!"
+  shopcreated: "&a您已成功設立商店!"
+  holdsomething: "&c請在主手拿著道具!"
+  notallowdtocreate: "&c你不允許在這邊設立/關閉商店."
+  notchest: "&c您注視的方塊並非一個箱子."
+  lookatchest: "&c請注視一個箱子."
+  csremoved: "&e此商店已成功關閉."
+  notowner: "&a你並非此商店的主人!"
+  notachestorcs: "&c您注視的方塊並非一個箱子."
+  maxShopLimitReached: "&cMaximum shop limit reached: %shoplimit%!"
+  slimeFunBlockNotSupported: "&cSorry :(, but you can't execute this command with a slimefun block / please use a normal block as a container"
+  buypriceGreaterThanSellRequired: "&cBuyPrice has to be greater then the SellPrice!"
+  invalidShopItem: "&cThe item you are trying to create a shop with is invalid here."
+  shopTransferConfirm: "&eAre you sure you want to permanently transfer this shops ownership to %player%? [&2&l[✔]](Click to confirm transfer! run_command=/ecs settings transfer-ownership %player% -confirm)"
+  shopTransferred: "&aYou have successfully transferred this shop to %player%!"
+  buyPriceUpdated: "&aBuy &7price has been updated!"
+  sellPriceUpdated: "&cSell &7price has been updated!"
+  emptyShopHightLighted:
+    enabled: "&aToggled ON, &bNearby &eshops that you own & empty are now highlighted for you. \n&eTotal empty shops near you: &b%emptyCount%"
+    disabled: "&cToggled OFF, &bNearby &eshops that you own & empty are no longer highlighted for you."
+checkprofits:
+  landing-menu:
+    - '&e========================================'
+    - '&7Total sales income: &6%currency%%income% &7from &6%sales% &7sale(s).'
+    - '&7Total buy cost: &6%currency%%cost% &7from &6%purchases% &7purchase(s).'
+    - '&7Total: &6%currency%%total%'
+    - '&7Balance: &6%currency%%balance%'
+    - '&7Click [&b&lHERE](Click for details! run_command=/checkprofits p 1) &7for a detailed report!'
+    - '&7Click to clear the report [&c&l[X]](Click to clear! run_command=/checkprofits clear)'
+  details-menu:
+    header:
+      - "&e----- &6Shop Profits Report &e-----"
+    content:
+      - " &e- &6%item%"
+      - "    &7Sales: [&e%sales%x %currency%%income%](Unit price: %unit_income%) &7Purchases: [&e%purchases%x %currency%%cost%](Unit price: %unit_cost%)"
+    footer:
+      - "&6%button_previous%&7Page %page%/%pages%&6%button_next%&7 | To view a page, type \"[&6/cp p <page>](Click to paste in chat suggest_command=/cp p )&7\""
+    hover-extra:
+      button-next: "Next"
+      button-previous: "Previous"
+  confirm-clear:
+    - "&eDo you really want to clear all profit data? [&2&l[✔]](Click to confirm clear! run_command=/checkprofits clear -confirm)"
+  confirm-clear-success: "&cYou've cleared all profit data!"
+  join-notification:
+    - "&eCheck your Shop profits [&b&lHERE](Click to show run_command=/checkprofits)"
+shulkershop-dropped-lore:
+  - "&eShulkerbox Shop:"
+  - " &7Owner: &6%owner%"
+  - " &7Item: &6%item%"
+  - " &7Buy: &6%currency%%buy_price%"
+  - " &7Sell: &6%currency%%sell_price%"
+hologram:
+  shop-empty: "&cThis shop is empty!"
+  shulkerbox-item: "&7%item% x&e%amount%"
+  shulkerbox-item-more: "&7and &e%amount% &7more!"
+  item-enchantment: "&b%enchantment% &e%level-roman%"
+  item-enchantment-more: "&7and &e%amount% &7more!"
+other:
+  update-notifications: "&c[&eEzChestShop&c] &eDetected a new version: &b%new_version%&e! You are still using &c%current_version%&e!"
+  overflowing-gui-items-notification: "&c[&eEzChestShop&c] &eYou have overflowing items in your customized GUI! Make sure these items are in a large enough GUI: &c%overflow%"
+  overlapping-gui-items-notification: "&c[&eEzChestShop&c] &eYou have overlapping items in your customized GUI! Here's a list of the unusual overlapping items: &c%overlap%"
+  hologram-shop-empty: "&cThis shop is empty!"

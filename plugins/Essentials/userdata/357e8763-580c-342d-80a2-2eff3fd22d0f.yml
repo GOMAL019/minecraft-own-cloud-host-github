@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 160.178.141.213
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709677392111
+  login: 1709676953128
+money: '0'
+last-account-name: GOMAL3
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -1316.5
+  y: 49.0
+  z: 1130.5
+  yaw: 91.828369140625
+  pitch: -0.2995532155036926
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -1094.5
+  y: 63.0
+  z: 1425.5
+  yaw: 179.2578125
+  pitch: -2.5504555702209473

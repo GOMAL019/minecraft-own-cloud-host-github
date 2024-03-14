@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 160.176.172.9
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1708802938079
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1708804730797
+  login: 1708804688960
+money: '12.0'
+last-account-name: khlooool
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: 15.520614613693354
+  y: 43.0
+  z: 41.48502441858087
+  yaw: -127.19872283935547
+  pitch: 41.614749908447266
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -102.80693414279418
+  y: 68.7531999805212
+  z: 268.0347970841241
+  yaw: 59.880367279052734
+  pitch: 9.00006103515625

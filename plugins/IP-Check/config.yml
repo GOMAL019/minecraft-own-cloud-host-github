@@ -1,0 +1,29 @@
+language: en
+use-mysql: false
+dbUsername: root
+dbPassword: ''
+dbHostname: 127.0.0.1
+dbName: ip-check
+dbPort: 3306
+dbGenerated: true
+notify-on-login: true
+warn-on-rejoin-attempt: false
+descriptive-notice: false
+secure-mode: false
+should-manage-bans: true
+active-mode: false
+should-ban-on-secure-kick: false
+min-account-notify-threshold: 1
+secure-kick-threshold: 1
+secure-kick-message: Multiple Accounts Not Permitted.
+ban-message: Banned for Multi-Accounting.
+kick-message: Kicked from server.
+disable-update-detection: false
+disable-metrics-monitoring: false
+use-geoip-services: true
+allow-geoip-download: true
+use-country-blacklist: true
+use-blacklist-as-whitelist: false
+country-blacklist: []
+blocked-message: Your country has been blocked from joining this server.
+config-version: 5

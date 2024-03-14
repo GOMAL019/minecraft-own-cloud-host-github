@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 196.75.187.55
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1709680545899
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709681442689
+  login: 1709678646024
+money: '2287.0'
+last-account-name: cuzmanX
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -103.64267210505103
+  y: 67.0
+  z: 250.01445101251318
+  yaw: -173.54971313476562
+  pitch: 15.749977111816406
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -31.809546433399248
+  y: 73.5
+  z: 366.16843016956784
+  yaw: -124.34976196289062
+  pitch: 22.649986267089844

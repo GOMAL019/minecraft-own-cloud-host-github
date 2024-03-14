@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 196.89.1.144
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709677990689
+  login: 1709676664625
+money: '11174.0'
+last-account-name: Da4or
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -289.40864969695883
+  y: 63.0
+  z: -137.36867045433866
+  yaw: 49.9429931640625
+  pitch: 64.79998016357422
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -103.06206680851147
+  y: 68.0
+  z: 259.3426805164459
+  yaw: -102.19873046875
+  pitch: 27.026010513305664

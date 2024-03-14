@@ -1,0 +1,46 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 196.115.147.65
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1709482725288
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709484421157
+  login: 1709483492825
+money: '738019.0'
+last-account-name: Mamoune
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -0.6113959859547501
+  y: 102.0
+  z: -4.631376111879034
+  yaw: -82.97525024414062
+  pitch: 37.0496711730957
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: 50.07065302693617
+  y: 64.0
+  z: -18.30000001192093
+  yaw: 146.67742919921875
+  pitch: 7.800009727478027
+mail:
+- legacy: false
+  read: false
+  message: Hello
+  sender-name: GOMAL
+  sender-uuid: be953edb-3788-3fa2-a31c-95be9c82ac3d
+  timestamp: 1705707267292
+  expire: 0

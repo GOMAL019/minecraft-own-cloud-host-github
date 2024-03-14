@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 196.75.94.130
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1706314139442
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709326841855
+  login: 1709326550918
+money: '3122.0'
+last-account-name: .AMIN_GAME6656
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -117.10392
+  y: 61.0
+  z: 289.69999
+  yaw: 51.424530029296875
+  pitch: 89.89999389648438
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -127.07162
+  y: 68.0
+  z: 433.48773
+  yaw: 16.1671142578125
+  pitch: 39.86921691894531

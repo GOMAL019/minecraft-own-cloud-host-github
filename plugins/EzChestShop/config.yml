@@ -1,0 +1,241 @@
+# EzChestShop plugin configuration
+# Before starting to config, please note that any usage of TABs in the config file may break the plugin so avoid using tabs and use space.
+# If you need help/found a bug, please join our Discord: https://discord.gg/rSfsqgCqBZ
+language: Locale_EN
+shops:
+  hologram:
+    # holograms are all shown in the async way and they won't waste a single tick / nor they are buggy like some other plugins
+    show-holograms: true
+    # represents the holographic texts of chestshops. Use %item% to display the item's display name.
+    # Use [item] for 1 Line to display the floating item. Use %buy% for buy price and %sell% for sell price.
+    # %currency% is defined under economy.server-currency and %owner% represents the shops creator.
+    # %maxbuy% & %maxsell% can be used to define the maximum amount a player can buy/sell to a shop at this time.
+    # %stock% can be used to display the amount of items stored in the shop.
+    # %capacity% can be used to display the maximum amount of items the shop can hold.
+    # %maxStackSize% displays the max stack size of the shop item.
+    # The HTML like <buy></buy> Syntax allows the plugin to remove parts of the message if buy/sell are disabled.
+    holo-structure:
+      - "<emptyShopInfo/>"
+      - "<custom1/>"
+      - "<custom2/>"
+      - "<custom3/>"
+      - "<custom4/>"
+      - "<buy>&fBuy: &a%buy% %currency%</buy><separator> &f| </separator><sell>&fSell: &c%sell% %currency%</sell>"
+      - "&d%item%"
+      - "<itemdata1/>"
+      - "<itemdata2/>"
+      - "<itemdata3/>"
+      - "<itemdata4/>"
+      - "<itemdataRest/>"
+      - "[item]"
+    holo-structure-adminshop:
+      - "<custom1/>"
+      - "<custom2/>"
+      - "<custom3/>"
+      - "<custom4/>"
+      - "<buy>&fBuy: &a%buy% %currency%</buy><separator> &f| </separator><sell>&fSell: &c%sell% %currency%</sell>"
+      - "&d%item%"
+      - "<itemdata1/>"
+      - "<itemdata2/>"
+      - "<itemdata3/>"
+      - "<itemdata4/>"
+      - "<itemdataRest/>"
+      - "[item]"
+    # Define a custom Line spacing multiplier. 1 is default.
+    holo-line-spacing: 1
+    # hologram will get removed after x seconds if plugin doesn't detect any movement toward chest shop (default: 10)
+    hologram-disappearance-delay: 10
+    # Allows players to rotate their Holograms to be displayed on different sides of the Block.
+    allow-rotation: true
+    # an alternative hologram display system, which is slower but provides easier visibility of nearby shops.
+    distance:
+      toggled: true
+      # Defines the range at which shops will render holograms (default: 20.0)
+      range: 20.0
+      # Set if items should be rendered first and holograms only when looking at the shop directly.
+      show-items-first: true
+  # Define which containers are applicable for chest shops:
+  container:
+    chests: true
+    trapped-chests: true
+    barrels: true
+    shulkers: false
+  display:
+    # define how the plugin should format displayed numbers, use: https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/text/DecimalFormat.html
+    number-format:
+      gui: "###,###.##"
+      chat: "###,###.##"
+      hologram: "###,###.##"
+  settings:
+    # Define the default settings when creating a shop:
+    defaults:
+      transaction-message: false
+      disable-buying: false
+      disable-selling: false
+      rotation: "up"
+      share-profit: true
+    # If set to true, "/ecs create 12 0" will automatically disable selling(or buying if "/ecs create 0 12")
+    zero-price-equals-disabled: true
+    # If set to true, this setting will require players to use a buy price that is greater than the sell price.
+    buy-greater-than-sell: true
+    # If set to true Shulker shops will be given some Lore when mined (Set inside the language files)
+    add-shulkershop-lore: true
+    # Toggle if custom amount buying or selling should be enabled.
+    custom-amount-transactions: true
+    hologram-messages:
+      enabled: true
+      # When true, custom hologram messages will be displayed even if hologram.distance.show-items-first is enabled.
+      show-always: false
+      # Sets how many lines can be used for custom hologram messages. If permissions.hologram-message-line-count is true, this setting is overridden.
+      line-count-default: 1
+      # If true, this will always show players if a shop is empty.
+      show-empty-shop-always: true
+  commands:
+    enabled: false
+    shop:
+      buy:
+        "*":
+          - /tell %player_name% You bought an Item!
+          - /tell %player_name% Thanks for shopping!
+      sell:
+        "*":
+          - /tell %player_name% You sold an Item!
+      open:
+        - /tell %player_name% Opening shop!
+    adminshop:
+      buy:
+        "*":
+          - /tell %player_name% You bought an admin Item!
+      sell:
+        "*":
+          - /tell %player_name% You sold an admin Item!
+      open:
+        - /tell %player_name% Opening adminshop!
+economy:
+  # Used to replace %currency% for the language files and the 2nd hologram line.
+  server-currency: $
+  use-xp: false
+commands:
+  # Register easier to remember alias on server startup: /shop and /adminshop
+  alias:
+    ecs-shop: false
+    ecsadmin-adminshop: false
+  checkprofit-lines-per-page: 4
+permissions:
+  # If set to true, players require the permission "ecs.shops.limit.X" where X is the maximum amount of shops a player can create.
+  create-shops: false
+  # Limit the amount of hologram messages a player can create. Use "ecs.shops.hologram.messages.limit.X"
+  hologram-message-limit: false
+  # Specify how many lines a player can use for their hologram messages. Use "ecs.shops.hologram.messages.lines.X"
+  hologram-message-line-count: false
+tasks:
+  # Normally, This option is for when server(basically other plugins) remove the chest shop, in this case, it could result in some issues
+  # if this is causing so much lag, you can turn this off (requires restart)
+  check-for-removed-shops: false
+#databases section
+database:
+  #available types SQLite & MySQL  (MySQL is recommended for the best  & big servers)
+  type: SQLite
+  #MySQL database information in case of usage
+  mysql:
+    ip: 127.0.0.1
+    port: 3306
+    tables-prefix: ecs_
+    database: TheDatabaseName
+    username: TheUsername
+    password: ThePassword
+    max-pool: 10
+    ssl: false
+integration:
+  worldguard: true
+  towny:
+    shops-only-in-shop-plots: true
+other:
+  notify-op-of-updates: true
+  # When certain items are overlapping/overflowing in the gui configuration, the plugin will notify ops to take actions.
+  # If you don't temper with the guis, you should never receive a notification and gui updates will happen automatically.
+  notify-op-of-overlapping-gui-items: true
+protection:
+  prevent-shop-destruction: true
+notification:
+  #Notify users when their shop is empty on join
+  notify-empty-shop-on-join: true
+  discord:
+    #Enable Discord notifications
+    enabled: false
+    #Discord webhook url
+    webhook-url: "https://discord.com/api/webhooks/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    #Discord message template
+    buy-sell-webhook:
+      enabled: true
+        #Discord message template
+      template:
+        content: null
+        embeds: #placeholders: %BUYER%, %SELLER%, %ITEM_NAME%, %PRICE%, %CURRENCY%, %SHOP_LOCATION%, %OWNER%, %COUNT%, %TIME%
+          - title: "New chest shop transaction is made!"
+            description: "Player %BUYER% has bought %ITEM_NAME% from %SELLER% for %PRICE% %CURRENCY%."
+            url: "https://www.spigotmc.org/resources/ez-chest-shop-ecs-1-14-x-1-19-x-mega-update.90411/"
+            color: 16753454
+            fields:
+              - name: "Shop Location:"
+                value: "%SHOP_LOCATION%"
+                inline: true
+              - name: "Shop Owner:"
+                value: "%OWNER%"
+                inline: true
+              - name: "Buyer:"
+                value: "%BUYER%"
+                inline: true
+              - name: "Seller:"
+                value: "%SELLER%"
+                inline: true
+              - name: "Amount:"
+                value: "%COUNT% %ITEM_NAME%"
+                inline: true
+              - name: "Time:"
+                value: "%TIME%"
+                inline: true
+            author:
+              name: "EzChestShop"
+              url: "https://www.spigotmc.org/resources/ez-chest-shop-ecs-1-14-x-1-19-x-mega-update.90411/"
+              icon_url: "https://cdn.discordapp.com/icons/902975048514678854/3f77b7a41dd80f018988d4a5d676273e.webp?size=128"
+            thumbnail:
+              url: "https://user-images.githubusercontent.com/20891968/235449301-7a12b967-a837-4e64-8e0b-c871a53e854e.png"
+        attachments: [ ]
+
+    new-shop-webhook:
+      enabled: true
+      template:
+        content: null
+        embeds: #placeholders: %OWNER%, %BUYING_PRICE%, %SELLING_PRICE%, %ITEM_NAME%, %MATERIAL%, %TIME%, %SHOP_LOCATION%
+          - title: New shop has been created!
+            description: "Player %OWNER% created a new shop for %ITEM_NAME%"
+            url: "https://www.spigotmc.org/resources/ez-chest-shop-ecs-1-14-x-1-19-x-mega-update.90411/"
+            color: 16753454
+            fields:
+              - name: "Shop Location:"
+                value: "%SHOP_LOCATION%"
+                inline: true
+              - name: "Buying Price"
+                value: "%BUYING_PRICE%"
+                inline: true
+              - name: "Selling Price:"
+                value: "%SELLING_PRICE%"
+                inline: true
+              - name: "Item Name:"
+                value: "%ITEM_NAME%"
+                inline: true
+              - name: "Material:"
+                value: "%MATERIAL%"
+                inline: true
+              - name: "Time:"
+                value: "%TIME%"
+                inline: true
+            author:
+              name: "EzChestShop"
+              url: "https://www.spigotmc.org/resources/ez-chest-shop-ecs-1-14-x-1-19-x-mega-update.90411/"
+              icon_url: "https://cdn.discordapp.com/icons/902975048514678854/3f77b7a41dd80f018988d4a5d676273e.webp?size=128"
+            thumbnail:
+              url: "https://user-images.githubusercontent.com/20891968/235449309-ead31b66-7a06-4c1a-b79d-1c5cf2c41ed8.png"
+        attachments: [ ]
+

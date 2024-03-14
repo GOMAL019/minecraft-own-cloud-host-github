@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 196.65.36.21
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709679153592
+  login: 1709675701079
+money: '0'
+last-account-name: .MODO56
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -121.91432
+  y: 79.0
+  z: 271.26907
+  yaw: 39.44364929199219
+  pitch: 67.68646240234375
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -102.974365
+  y: 79.0
+  z: 276.92377
+  yaw: -103.01441955566406
+  pitch: 89.89999389648438

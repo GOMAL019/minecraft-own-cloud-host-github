@@ -1,0 +1,11 @@
+# This plugin collects some data like the online players, 
+# ip address, port, etc. so I can visit your server. To see what you do with my plugin helps 
+# me to motivate myself to continue to develop this plugin. This system also allows me to enable premium 
+# features remotely. (Only enabling not disabling) If you don't want that 
+# just set "enabled" to false. All collected data will be deleted automatically 
+# after a restart or after the plugin hasn't been started for 2 weeks. If you don't see 
+# an installId in this file, no data has been sent or all collected data has been deleted.
+# Thanks for using this plugin!
+
+enabled: true
+installId: 6ab70a2f-4790-472a-814c-e4896471d7f9

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.3.180.194
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1709953139052
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709953597786
+  login: 1709951818047
+money: '0'
+last-account-name: ASTROZIRO
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -5559.793914510695
+  y: 64.0
+  z: 2740.3240054767293
+  yaw: -151.709716796875
+  pitch: 20.99919891357422
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -5556.042337220049
+  y: 64.0
+  z: 2741.3565424227622
+  yaw: -128.525634765625
+  pitch: 11.699140548706055

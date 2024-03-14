@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 197.146.30.165
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709136019568
+  login: 1709136014489
+money: '225827.0'
+last-account-name: Habibe_XD
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -2240.346501146988
+  y: 71.0
+  z: 23.687483000418393
+  yaw: 59.869136810302734
+  pitch: 47.69989776611328
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -1303.7114311827224
+  y: 85.54883601036126
+  z: 777.9324952086524
+  yaw: -117.00011444091797
+  pitch: -71.55026245117188

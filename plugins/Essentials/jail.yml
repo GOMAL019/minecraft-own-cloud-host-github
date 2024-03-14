@@ -1,0 +1,73 @@
+jails:
+  cell1:
+    world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+    world-name: world
+    x: -100.5
+    y: 58.0
+    z: 296.5
+    yaw: 178.115966796875
+    pitch: 54.74998092651367
+  cell2:
+    world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+    world-name: world
+    x: -105.73654788029474
+    y: 58.0
+    z: 297.30810996596165
+    yaw: -169.13397216796875
+    pitch: 63.14988708496094
+  ziyara1:
+    world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+    world-name: world
+    x: -117.67137088460781
+    y: 61.0
+    z: 272.19732819202693
+    yaw: -94.35000610351562
+    pitch: 34.050106048583984
+  ziyara2:
+    world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+    world-name: world
+    x: -116.21082975573071
+    y: 61.0
+    z: 278.0718234971126
+    yaw: -43.49993896484375
+    pitch: 46.050113677978516
+  ziyara3:
+    world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+    world-name: world
+    x: -115.84004891704863
+    y: 61.0
+    z: 282.4484871579437
+    yaw: 44.099700927734375
+    pitch: 29.40007209777832
+  ziyara4:
+    world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+    world-name: world
+    x: -116.13565678547786
+    y: 61.0
+    z: 288.88625337646766
+    yaw: -87.450927734375
+    pitch: 24.75008201599121
+  ziyara5:
+    world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+    world-name: world
+    x: -114.39093207642168
+    y: 61.12082190563355
+    z: 265.98819532372613
+    yaw: -69.7501220703125
+    pitch: 35.55012130737305
+  cell3:
+    world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+    world-name: world
+    x: -100.85383542409659
+    y: 60.0
+    z: 260.9244232823998
+    yaw: 24.5997314453125
+    pitch: 24.450075149536133
+  cell4:
+    world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+    world-name: world
+    x: -101.83544411864865
+    y: 60.0
+    z: 271.19663540453075
+    yaw: -179.6988525390625
+    pitch: 41.8501091003418

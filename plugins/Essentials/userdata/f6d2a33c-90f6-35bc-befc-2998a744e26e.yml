@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 41.141.172.255
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709396533476
+  login: 1709393010561
+money: '33847.0'
+last-account-name: iiYyunss
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: 590.4316348551753
+  y: 71.0
+  z: 1010.5568060478403
+  yaw: -85.0621337890625
+  pitch: 25.199865341186523
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -13553.699999988079
+  y: -25.0
+  z: -10080.079671920723
+  yaw: 2.714111328125
+  pitch: 25.799991607666016

@@ -1,0 +1,253 @@
+############################################
+#      db      `7MM"""Mq.  `7MMM.     ,MMF'#
+#     ;MM:       MM   `MM.   MMMb    dPMM  #
+#    ,V^MM.      MM   ,M9    M YM   ,M MM  #
+#   ,M  `MM      MMmmdM9     M  Mb  M' MM  #
+#   AbmmmqMA     MM  YM.     M  YM.P'  MM  #
+#  A'     VML    MM   `Mb.   M  `YM'   MM  #
+#.AMA.   .AMMA..JMML. .JMM..JML. `'  .JMML.#
+############################################
+
+# If you are creating a region you can write this instead of the price in the last line of
+# the sign and ARM will calculate the price for the region.
+# 'static' price is exactly what stands here
+# 'per_m2' price gets multiplied with the amount of square meters of the region
+# 'per_m3' price gets multiplied with the amount of cubic meters of the region
+# If you created a region with an autoprice you can adjust the price for all
+# regions with this autoprice by changing the price here. If arm can not find an
+# autoprice for a region on startup it will use the default autoprice
+AutoPrice:
+  example1:
+    price: 200.0
+    extendTime: 2d
+    maxExtendTime: 7d
+    autoPriceCalculation: static
+  example2:
+    price: 2.0
+    extendTime: 12h
+    maxExtendTime: 2d
+    autoPriceCalculation: per_m2
+  example3:
+    price: 0.05
+    extendTime: 7d
+    maxExtendTime: 30d
+    autoPriceCalculation: per_m3
+
+DefaultAutoprice:
+  price: 2.0
+  extendTime: 1d
+  maxExtendTime: 7d
+  autoPriceCalculation: per_m2
+
+FlagGroups:
+  # FlagGroups can be used to automatically assign flags and priorities on
+  # regions. You can also define Flags that will only be applied if the region
+  # is currently available or only if the region is sold. You could use this
+  # for example to allow all players to open doors and to use buttons if a region
+  # is not sold and only allow owners and members of a region to use these things
+  # is the region got bought. You can also allow your players to edit specific
+  # flags via "/arm flageditor [REGION]". An example for that would be a greeting
+  # greeting message if a player enters the region.
+  # You can edit the flaggroups in the file flaggroups.yml.
+  enabled: false
+
+# Limits can be assigned to players by giving them the permission arm.limit.LIMITGROUP
+# you can set limits by writing a regionkind and the limit behind it. Not existing regionkinds
+# will be ignored. If you want to limit regions without a kind use 'Default'. If you want to
+# limit the total amount of regions a player can have write total. With '-1' you can set the limit to unlimited
+# If a player has more than one limit group ARM will compare the groups and give him the best limits from
+# his groups. By default all player have no limit. The permission 'arm.admin.bypasslimit' will set the limit
+# to unlimited too.
+
+Limits:
+  examplegroup1:
+    total: 2
+    regionkinds:
+      Default: -1
+      starter: 1
+      small: 3
+      medium: 5
+      large: 0
+      shop: 1
+    regionkindgroups:
+      citybuild-plot: 4
+  examplegroup2:
+    total: 10
+    regionkinds:
+      Default: -1
+      starter: 1
+      small: 2
+      medium: 1
+      large: 1
+      shop: 1
+    regionkindgroups: {}
+  examplegroup3:
+    total: -1
+    regionkinds:
+      Default: -1
+      starter: 1
+      small: 2
+      medium: 2
+      large: 2
+      shop: 2
+    regionkindgroups: {}
+
+
+# InactivityExpirationGroups can be assigned to players by giving them the permission arm.inactivityexpiration.INACTIVITYEXPIRATIONGROUP
+# For example use arm.inactivityexpiration.examplegroup1 to assign the examplegroup1 defined below to a player.
+# Regions that have inactivityExpiration enabled will be reset if the owner of the region does not come online for the time
+# specified in 'resetAfter'. You can give members of the region the opportunity to become the owner the region before it gets reset.
+# You can specify the amount of time in 'takeOverAfter'.
+# If a player has multiple InactivityExpirationGroups assigned ARM automatically picks the group with the highest amount of days
+# If a player has no InactivityExpirationGroups assigned ARM will use the DefaultInactivityExpirationGroup!
+# Use arm.inactivityexpiration.unlimited to deactivate TakeOver and InactivityReset for a player
+
+InactivityExpiration:
+  examplegroup1:
+    resetAfter: '30d'
+    takeOverAfter: '20d'
+  examplegroup2:
+    resetAfter: '60d'
+    takeOverAfter: '50d'
+  examplegroup3:
+    resetAfter: 'none'
+    takeOverAfter: 'none'
+
+DefaultInactivityExpiration:
+  resetAfter: 'none'
+  takeOverAfter: 'none'
+
+SignLinkingMode:
+  # The regions listed below will automatically be ignored if you try to select a region via SignLinkingMode
+  regionblacklist:
+    world:
+      - blacklistedTestRegionInWorld1
+      - blacklistedTestRegionInWorld2
+    world_nether:
+      - blacklistedTestRegionInWorld_nether1
+      - blacklistedTestRegionInWorld_nether2
+    world_the_end:
+      - anotherBlacklistedRegion
+
+PriceFormatting:
+  # Describes how prices will be formatted. For example:
+  # US would format the price like this: 123,456.78
+  # DE would format the price like this: 123.456,78
+  locale: US
+  # Minumum amount of numbers after the ","
+  minimumFractionDigits: 2
+  # Maximum amount of numbers after the ","
+  maximumFractionDigits: 2
+  # Minimum amount of numbers before the ","
+  minimumIntegerDigits: 1
+
+Other:
+  # If users have the permission 'arm.member.restore' they can reset their own regions. The number
+  # behind is the cooldown when they can reset their region again.
+  userResetCooldown: 7d
+  # If set on true the user will be teleported in the middle of their region if they buy one.
+  TeleportAfterSellRegionBought: true
+  TeleportAfterRentRegionBought: false
+  TeleportAfterRentRegionExtend: false
+  TeleportAfterContractRegionBought: true
+  TeleportAfterRegionBoughtCountdown: false
+  # If a player rents a rentregion and it will expire soon, he will get a message when he joins the server
+  SendRentRegionExpirationWarning: true
+  RentRegionExpirationWarningTime: '2d'
+  SendContractRegionExtendMessage: true
+  # The updateinterval for all signs and expiration checks in seconds
+  SignAndResetUpdateInterval: 2
+  # dd for days, MM for months, yyyy for years, hh for hours, mm for minutes
+  DateTimeFormat: 'dd.MM.yyyy HH:mm'
+  # If enabled ARM will suggest Regions on tab-complete! This may cause lags if you have many regions!
+  # Enable it only when you just manage a few regions with ARM!
+  CompleteRegionsOnTabComplete: true
+  # Time in seconds the server should wait before teleporting someone. If the player moves while the countdown runs the teleportation will abort.
+  # Set this to 0 to disable the countdown. Players with the permisison arm.admin.bypassteleportercooldown won't get a countdown
+  TeleporterTimer: 0
+  # If you execute /arm info arm will display the region borders of the region (only for the player who executes the command)
+  RegionInfoParticleBorder: true
+  # If true all entities will be removed if the region gets resetted
+  RemoveEntitiesOnRegionRestore: true
+  #The language of the plugin. Available languages:  en, de, fr, ru, es, zh_cn, pl
+  #You can send me your own translations of the plugin and I'll
+  #include them into the plugin. You have to remove the messages.yml
+  #and reload/restart the plugin if you want that arm regenerates the
+  #messages file in your preferred language.
+  Language: en
+
+  #These commands will be executed by the player if the clicks on a sign. "buyaction" means the buyaction of the region will be executed (For example extending the region
+  #or teminating the contract) you can use all region-variables in your commands.
+SignClickActions:
+  RightClickNotSneakCmd: "buyaction"
+  RightClickSneakCmd: "arm sellback %regionid%"
+  LeftClickNotSneakCmd: "arm info %regionid%"
+  LeftClickSneakCmd: "arm gui %regionid%"
+
+Backups:
+  createBackupOnRegionRestore: true
+  createBackupOnRegionUnsell: true
+
+Subregions:
+  AllowSubregionUserRestore: false
+  SubregionAutoRestore: false
+  SubregionMaxMembers: -1
+  SubregionInactivityReset: true
+  SubregionPaybackPercentage: 0
+  deleteSubregionsOnParentRegionUnsell: false
+  deleteSubregionsOnParentRegionRestore: false
+  allowParentRegionOwnersBuildOnSubregions: true
+
+Reselling:
+  Offers:
+    # Time in seconds
+    OfferTimeOut: 30
+
+#Here you can change the Blocks that will be shown in the GUI. You can use
+#this (https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html) as a List for possible blocks.
+#You can change the names of the item and the lore of the items in the messages.yml
+GUI:
+  RegionOwnerItem: ENDER_CHEST
+  RegionMemberItem: CHEST
+  RegionFinderItem: COMPASS
+  RegionFinderSellTypeSelectorItem: BRICK
+  GoBackItem: OAK_DOOR
+  WarningYesItem: MELON
+  WarningNoItem: REDSTONE_BLOCK
+  TPItem: ENDER_PEARL
+  SellRegionItem: DIAMOND
+  ResetItem: TNT
+  ExtendItem: CLOCK
+  InfoItem: BOOK
+  PromoteMemberToOwnerItem: LADDER
+  RemoveMemberItem: LAVA_BUCKET
+  FillItem: GRAY_STAINED_GLASS_PANE
+  ContractItem: WRITABLE_BOOK
+  SubRegionItem: GRASS_BLOCK
+  TeleportToSignItem: OAK_SIGN
+  TeleportToRegionItem: GRASS_BLOCK
+  DeleteItem: BARRIER
+  NextPageItem: ARROW
+  PrevPageItem: ARROW
+  HotelSettingItem: RED_BED
+  UnsellItem: NAME_TAG
+  EntityLimitGroupItem: CHICKEN_SPAWN_EGG
+  FlageditorItem: BANNER
+  FlagItem: SIGN
+  FlagSettingsSelectedItem: EMERALD_BLOCK
+  FlagSettingsNotSelectedItem: REDSTONE_BLOCK
+  FlagGroupSelectedItem: EMERALD_BLOCK
+  FlagGroupNotSelectedItem: REDSTONE_BLOCK
+  FlagRemoveItem: BARRIER
+  FlagUserInputItem: WRITABLE_BOOK
+  FlageditorResetItem: TNT
+  DisplayRegionOwnerButton: true
+  DisplayRegionMemberButton: true
+  DisplayRegionFinderButton: true
+# Can cause lags, because skins need to be fetched from Mojang-Server
+  DisplayPlayerSkins: false
+
+#Do not change this
+Version: 3.5.3
+# Programmed by Alex9849
+# If you like my plugin you are free to donate me via PayPal https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2Z6VVLS5SZXJS

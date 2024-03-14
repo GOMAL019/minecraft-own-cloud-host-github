@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 105.67.129.226
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1705440278363
+  login: 1705435646687
+money: '53660.0'
+last-account-name: .Zikola122669
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -142.92691
+  y: 64.0
+  z: 146.08188
+  yaw: -74.97801208496094
+  pitch: 20.94671630859375
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -1384.5219
+  y: 84.0
+  z: 824.9729
+  yaw: -29.559463500976562
+  pitch: 14.99822998046875

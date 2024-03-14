@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 196.64.233.109
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1707604574192
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1707604745800
+  login: 1707601148418
+money: '0'
+last-account-name: Mahmoud-19
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: 35.47503795733653
+  y: 64.0
+  z: -10.7413029357913
+  yaw: -178.78515625
+  pitch: 26.39995574951172
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -169.76549550312984
+  y: 67.0
+  z: 308.4227618701813
+  yaw: -89.21368408203125
+  pitch: 15.636969566345215

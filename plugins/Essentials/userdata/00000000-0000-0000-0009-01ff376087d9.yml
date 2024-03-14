@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 105.71.6.218
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1709675250312
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709675985241
+  login: 1709674789877
+money: '50705.0'
+last-account-name: .Youssef_ITOS_08
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -186.31691
+  y: 65.0
+  z: 170.49808
+  yaw: 73.63978576660156
+  pitch: 36.123687744140625
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -107.99593
+  y: 64.03584
+  z: 141.04088
+  yaw: 66.99662780761719
+  pitch: 2.357177734375

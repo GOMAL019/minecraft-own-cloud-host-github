@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 197.145.154.171
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1709650556653
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709650732185
+  login: 1709645609136
+money: '30460.0'
+last-account-name: ma4wane
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -443.46649824453874
+  y: 63.0
+  z: 660.1852527169856
+  yaw: -92.247802734375
+  pitch: 20.572776794433594
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -439.9853193981666
+  y: 72.0
+  z: 655.0106582690563
+  yaw: 87.80967712402344
+  pitch: 67.88162231445312

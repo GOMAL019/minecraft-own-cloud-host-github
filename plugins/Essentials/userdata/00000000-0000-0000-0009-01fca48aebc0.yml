@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 41.140.38.75
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1705439075611
+  login: 1705438419613
+money: '40078.0'
+last-account-name: .Otmanbb1
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -101.5531
+  y: 59.0
+  z: 297.2289
+  yaw: 174.177734375
+  pitch: 63.52691650390625
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -174.36328
+  y: 64.0
+  z: 194.00624
+  yaw: 51.18360900878906
+  pitch: 7.880126953125

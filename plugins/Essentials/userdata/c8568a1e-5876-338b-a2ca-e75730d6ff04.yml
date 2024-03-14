@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 102.78.205.221
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1709684904212
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709684920136
+  login: 1709676878674
+money: '380.0'
+last-account-name: GhassanGameng
+lastlocation:
+  world: 23f4c19c-d1d1-4dd4-8df2-76d8e8f02b11
+  world-name: world_the_end
+  x: 118.05459342543897
+  y: 57.626739438129356
+  z: -19.43698751583127
+  yaw: 94.04376983642578
+  pitch: -6.149951934814453
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -200.08757371091588
+  y: 64.0
+  z: 128.59066345259126
+  yaw: 148.64991760253906
+  pitch: 30.59998321533203

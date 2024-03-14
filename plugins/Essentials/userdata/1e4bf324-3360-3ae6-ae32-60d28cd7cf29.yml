@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 197.146.182.138
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1706800792857
+  login: 1706800691892
+money: '31000'
+last-account-name: Robio
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -203.2045032992198
+  y: 64.0
+  z: 136.96111682277484
+  yaw: 33.031768798828125
+  pitch: 13.649984359741211
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -149.9616200667433
+  y: 64.0
+  z: 134.60495024691045
+  yaw: -29.69989013671875
+  pitch: 40.05010986328125

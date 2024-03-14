@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 196.65.186.81
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1708867190953
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1708891348093
+  login: 1708888954778
+money: '9459.5'
+last-account-name: vasto
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -12.146072585912142
+  y: 73.0
+  z: 1430.300000011921
+  yaw: -98.7171630859375
+  pitch: 17.099977493286133
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -15745.336373588078
+  y: 141.0
+  z: -16565.161883368488
+  yaw: -26.100982666015625
+  pitch: 46.80006408691406

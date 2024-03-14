@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 197.146.225.211
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1709672415303
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709674831408
+  login: 1709670780023
+money: '7.0'
+last-account-name: isano
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -102.543029664045
+  y: 71.5
+  z: 273.09113848518086
+  yaw: 178.81053161621094
+  pitch: 19.2003231048584
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -134.22654780307758
+  y: 64.0
+  z: 82.73307309467141
+  yaw: -153.00791931152344
+  pitch: 8.099932670593262

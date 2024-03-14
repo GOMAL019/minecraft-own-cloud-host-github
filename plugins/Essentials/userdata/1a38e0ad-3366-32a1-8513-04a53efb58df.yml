@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 196.121.36.60
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1709491356934
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709579923396
+  login: 1709579508716
+money: '0'
+last-account-name: Snapnap45
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: 768.3000000119209
+  y: 32.0
+  z: 1963.1388778493158
+  yaw: -167.40081787109375
+  pitch: 13.949971199035645
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: 217.61009985700025
+  y: 64.0
+  z: 147.58514257840042
+  yaw: -93.6533203125
+  pitch: -21.14996337890625

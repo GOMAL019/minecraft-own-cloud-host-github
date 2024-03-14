@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 105.158.142.56
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709670527644
+  login: 1709670055981
+money: '724.0'
+last-account-name: PRIIZMOO
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -237.30000001192093
+  y: 124.0
+  z: 1045.7082538923648
+  yaw: -86.1002197265625
+  pitch: 6.449962139129639
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: 26.612231131986785
+  y: 64.0
+  z: -7.871963959482842
+  yaw: 125.13118743896484
+  pitch: -7.177828788757324

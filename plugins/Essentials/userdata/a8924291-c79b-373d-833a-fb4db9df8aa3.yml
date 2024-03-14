@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 41.250.160.93
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1709677293507
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709679390989
+  login: 1709679387174
+money: '33918.25'
+last-account-name: ABDO
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -104.78271392518948
+  y: 72.0
+  z: 274.98264579062385
+  yaw: 133.23587036132812
+  pitch: 43.35014724731445
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: 45.49993485970697
+  y: 66.9504675442952
+  z: 63.33185484125296
+  yaw: -63.1593017578125
+  pitch: 9.750019073486328

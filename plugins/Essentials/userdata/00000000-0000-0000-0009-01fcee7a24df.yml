@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 105.157.35.59
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1709669349015
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709679787289
+  login: 1709679249878
+money: '28874.0'
+last-account-name: .LM9_ADAMS
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -180.07346
+  y: 65.0
+  z: 177.67351
+  yaw: 32.900634765625
+  pitch: 89.89999389648438
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -492.5
+  y: 66.5625
+  z: 214.5
+  yaw: 90.0
+  pitch: 0.0

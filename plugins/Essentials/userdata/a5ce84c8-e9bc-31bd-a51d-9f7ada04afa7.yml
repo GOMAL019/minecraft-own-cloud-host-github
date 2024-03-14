@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 41.140.122.0
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1707603766636
+  login: 1707603251037
+money: '77742.0'
+last-account-name: TOFITA
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: 20.70143791299049
+  y: 65.0
+  z: -15.699999988079071
+  yaw: -114.44961547851562
+  pitch: 30.000211715698242
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: 1858.2986188962916
+  y: -52.0
+  z: -7794.4930130999965
+  yaw: 147.30422973632812
+  pitch: 68.99993133544922

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 196.121.89.85
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1706042703398
+  login: 1706041741262
+money: '31905.0'
+last-account-name: .RAGNAN9999
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -408.4667
+  y: 63.94999694824219
+  z: 424.30001
+  yaw: 108.44818115234375
+  pitch: 4.876708984375
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -419.30001
+  y: 58.5625
+  z: 448.34384
+  yaw: -105.03927612304688
+  pitch: -60.8011474609375

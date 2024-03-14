@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 102.78.204.174
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1705669476064
+  login: 1705668558003
+money: '31746.0'
+last-account-name: .ASTROyassi
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -41.928352
+  y: 66.1238
+  z: -2.7422385
+  yaw: -76.53984069824219
+  pitch: 22.625167846679688
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -86.58238
+  y: 61.0
+  z: -1.5661736
+  yaw: -83.32914733886719
+  pitch: 79.7635498046875

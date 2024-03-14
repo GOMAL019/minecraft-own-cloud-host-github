@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 41.251.187.188
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1705623596494
+  login: 1705623394595
+money: '35486.0'
+last-account-name: AbdoXm
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -101.882073205984
+  y: 64.0
+  z: 160.2863305259641
+  yaw: 20.24880599975586
+  pitch: 5.550009250640869
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -102.9614027057638
+  y: 68.02442408821369
+  z: 248.96046804724713
+  yaw: 177.74952697753906
+  pitch: -1.9499942064285278

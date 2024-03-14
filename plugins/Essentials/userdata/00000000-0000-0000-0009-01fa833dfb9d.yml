@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 196.64.96.252
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1708178529776
+  login: 1708178503286
+money: '31000'
+last-account-name: .OurMedal0480054
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -185.27914
+  y: 64.0
+  z: 82.82836
+  yaw: 128.8970947265625
+  pitch: 0.0
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: -123.950676
+  y: 61.0
+  z: 369.30001
+  yaw: 14.549270629882812
+  pitch: 89.89999389648438

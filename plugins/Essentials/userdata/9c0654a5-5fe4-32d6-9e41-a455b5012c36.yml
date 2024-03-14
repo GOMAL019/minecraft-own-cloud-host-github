@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 196.217.71.193
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1709668058220
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1709668163396
+  login: 1709667918017
+money: '510481.0'
+last-account-name: khalil-911
+logoutlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: 51.31151755274706
+  y: 41.42902673613629
+  z: -51.27331269334975
+  yaw: -6.75238037109375
+  pitch: 17.850080490112305
+lastlocation:
+  world: aa674566-3fe6-47cf-93bf-1e4a0ca139da
+  world-name: world
+  x: 854.2076103761327
+  y: 51.0
+  z: 1680.1639044921385
+  yaw: 122.92106628417969
+  pitch: 7.314116954803467

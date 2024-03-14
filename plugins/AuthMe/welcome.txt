@@ -1,0 +1,3 @@
+Welcome {PLAYER} on Morcraft server
+
+This server uses AuthMeReloaded protection!

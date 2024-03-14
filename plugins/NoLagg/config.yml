@@ -1,0 +1,6 @@
+prefix: '&a[NoLagg]'
+clear_msg: '%prefix% &3%amount% Items removed!'
+time_msg: '%prefix% &3all Items will be cleared in %amount% second(s)!'
+no_perms: '&cYou don''''t have permissions!'
+clear_time: 120
+broadcast_time: 60,20,5,4,3,2,1
